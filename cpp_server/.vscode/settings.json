@@ -1,0 +1,7 @@
+{
+    "cmake.debugConfig": {
+        "args":[
+            "--config=/home/jens/Desktop/dbus_example/cpp_server/config/config.json"
+        ]
+    }
+}
