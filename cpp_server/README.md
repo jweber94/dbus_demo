@@ -7,3 +7,7 @@ This project is an example for handing over file descriptors via dbus, makeing t
 + You need to have boost installed on your system
     - e.g. via apt: `$ sudo apt install libboost-dev`
     - or by compiling the latest version on your own: https://www.boost.org/doc/libs/1_48_0/doc/html/bbv2/installation.html
+
+## Sending file descriptors via dbus
++ See https://dbus.freedesktop.org/doc/dbus-specification.html section "***Basic Types***" for details
+    - You can use the `h` datatype to (de-)serialize file descriptors in dbus

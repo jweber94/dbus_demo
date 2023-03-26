@@ -9,5 +9,8 @@ int main(int argc, char** argv) {
     CmdParser parser(argc, argv);
     std::cout << "Name is " << parser.getConfig().name << std::endl;
 
+    DbusInterface dbusInstance;
+    dbusInstance.startEventLoop();
+    
     return 0;
 }

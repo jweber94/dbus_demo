@@ -5,6 +5,7 @@
 
 struct dbusConfig {
     std::string name;
+    std::string data_file;
     int socket_fd;
 };
 

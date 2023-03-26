@@ -1,3 +1,4 @@
 {
-    "name": "dbus_test"
+    "name": "dbus_test",
+    "file": "data.dat"
 }

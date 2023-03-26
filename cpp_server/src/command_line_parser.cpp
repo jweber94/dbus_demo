@@ -39,4 +39,5 @@ void CmdParser::processConfig() {
     boost::property_tree::ptree configPtree;
     boost::property_tree::read_json(m_configPath, configPtree);
     m_dbusConfig.name = configPtree.get_child("name").get_value<std::string>();
+    m_dbusConfig.data_file = configPtree.get_child("file").get_value<std::string>();
 }
