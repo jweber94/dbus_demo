@@ -3,5 +3,13 @@
         "args":[
             "--config=/home/jens/Desktop/dbus_example/cpp_server/config/config.json"
         ]
-    }
+    },
+    "idf.espIdfPath": "/home/jens/esp/esp-idf",
+    "idf.pythonBinPath": "/home/jens/.espressif/python_env/idf5.1_py3.8_env/bin/python",
+    "idf.toolsPath": "/home/jens/.espressif",
+    "idf.customExtraPaths": "/home/jens/.espressif/tools/xtensa-esp-elf-gdb/11.2_20220808/xtensa-esp-elf-gdb/bin:/home/jens/.espressif/tools/riscv32-esp-elf-gdb/11.2_20220808/riscv32-esp-elf-gdb/bin:/home/jens/.espressif/tools/xtensa-esp32-elf/esp-2022r1-11.2.0/xtensa-esp32-elf/bin:/home/jens/.espressif/tools/xtensa-esp32s2-elf/esp-2022r1-11.2.0/xtensa-esp32s2-elf/bin:/home/jens/.espressif/tools/xtensa-esp32s3-elf/esp-2022r1-11.2.0/xtensa-esp32s3-elf/bin:/home/jens/.espressif/tools/riscv32-esp-elf/esp-2022r1-11.2.0/riscv32-esp-elf/bin:/home/jens/.espressif/tools/esp32ulp-elf/2.28.51-esp-20191205/esp32ulp-elf-binutils/bin:/home/jens/.espressif/tools/esp32s2ulp-elf/2.28.51-esp-20191205/esp32s2ulp-elf-binutils/bin:/home/jens/.espressif/tools/cmake/3.23.1/bin:/home/jens/.espressif/tools/openocd-esp32/v0.11.0-esp32-20220706/openocd-esp32/bin:/home/jens/.espressif/tools/ninja/1.10.2",
+    "idf.customExtraVars": {
+        "OPENOCD_SCRIPTS": "/home/jens/.espressif/tools/openocd-esp32/v0.11.0-esp32-20220706/openocd-esp32/share/openocd/scripts"
+    },
+    "idf.gitPath": "/usr/bin/git"
 }

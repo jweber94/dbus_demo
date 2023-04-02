@@ -23,10 +23,12 @@ void DbusInterface::getFileDescriptor(sdbus::MethodCall call) {
     auto reply = call.createReply();
     reply << fileno(m_fd); // get filedescriptor from FILE* and put it to the reply
     reply.send();
+    
 }
 
 void DbusInterface::linkMethodstoObject() {
     m_pDbusObject->registerMethod(m_interfaceNameFileDescriptorExchange, "test", "", "h", std::bind(&DbusInterface::getFileDescriptor, this, std::placeholders::_1)); //registerMethod(m_serviceName, "getFileDescriptor", "", "h", &getFileDescriptor);
+    m_pDbusObject->finishRegistration();
 }
 
 void DbusInterface::linkSignalsstoObject() {
