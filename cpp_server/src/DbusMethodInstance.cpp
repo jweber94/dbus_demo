@@ -12,11 +12,18 @@ m_dbusConnection(dbusConnection)
     // create object aka ressource on the dbus server
     m_pDbusObject = sdbus::createObject(*m_dbusConnection, m_objectPath);
 
-    linkMethodstoObject();
-
     // open up the filedescriptor that we want to share via dbus
     m_fd = fopen("/home/jens/Desktop/dbus_example/cpp_server/config/data.dat", "rw");
-    m_fdSdbus = sdbus::UnixFd(fileno(m_fd));
+    if (m_fd) {
+        m_fdSdbus = sdbus::UnixFd(fileno(m_fd));
+    }
+    else {
+        std::cerr << "Could not open the file. Terminating program!" << std::endl;
+        exit(1);
+    }
+
+    linkMethodstoObject();
+    linkSignalsstoObject();
 }
 
 void DbusMethodInstance::getFileDescriptor(sdbus::MethodCall call) {
@@ -32,6 +39,10 @@ void DbusMethodInstance::getFileDescriptor(sdbus::MethodCall call) {
 void DbusMethodInstance::linkMethodstoObject() {
     m_pDbusObject->registerMethod(m_interfaceMethodName, "test", "", "h", std::bind(&DbusMethodInstance::getFileDescriptor, this, std::placeholders::_1)); //registerMethod(m_serviceName, "getFileDescriptor", "", "h", &getFileDescriptor);
     m_pDbusObject->finishRegistration();
+}
+
+void DbusMethodInstance::linkSignalsstoObject() {
+    std::cout << "TODO" << std::endl;
 }
 
 void DbusMethodInstance::startEventLoop() {
