@@ -5,10 +5,10 @@
 #include <stdio.h>
 
 
-class DbusInterface {
+class DbusMethodInstance {
     public:
-        DbusInterface();
-        ~DbusInterface() {
+        DbusMethodInstance(sdbus::IConnection* dbusConnection);
+        ~DbusMethodInstance() {
             fclose(m_fd);
         }
         
@@ -21,12 +21,13 @@ class DbusInterface {
         void getFileDescriptor(sdbus::MethodCall call);
 
         // Dbus Service Configuration
-        const std::string m_serviceName; // name at the dbus daemon
+        const std::string m_interfaceMethodName; // name at the dbus daemon
+        const std::string m_interfaceSignalName;
         const std::string m_objectPath; // like a ressource of a webserver
-        const std::string m_interfaceNameFileDescriptorExchange; // every object path aka ressource can have multuple interfaces where methods and signals can be registered 
         // Dbus Daemon interaction
         std::shared_ptr<sdbus::IObject> m_pDbusObject;
-        std::unique_ptr<sdbus::IConnection> m_dbusConnection;
+        sdbus::IConnection* m_dbusConnection;
 
         FILE* m_fd;
+        sdbus::UnixFd m_fdSdbus;
 };

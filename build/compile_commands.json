@@ -1,0 +1,25 @@
+[
+{
+  "directory": "/home/jens/Desktop/dbus_example/build",
+  "command": "/usr/bin/c++  -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -I/home/jens/Desktop/dbus_example/cpp_server/include  -g   -std=c++17 -o CMakeFiles/dbus-service-app.dir/src/main.cpp.o -c /home/jens/Desktop/dbus_example/cpp_server/src/main.cpp",
+  "file": "/home/jens/Desktop/dbus_example/cpp_server/src/main.cpp"
+},
+
+{
+  "directory": "/home/jens/Desktop/dbus_example/build",
+  "command": "/usr/bin/c++  -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -I/home/jens/Desktop/dbus_example/cpp_server/include  -g   -std=c++17 -o CMakeFiles/dbus-service-app.dir/src/data_exchange_class.cpp.o -c /home/jens/Desktop/dbus_example/cpp_server/src/data_exchange_class.cpp",
+  "file": "/home/jens/Desktop/dbus_example/cpp_server/src/data_exchange_class.cpp"
+},
+
+{
+  "directory": "/home/jens/Desktop/dbus_example/build",
+  "command": "/usr/bin/c++  -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -I/home/jens/Desktop/dbus_example/cpp_server/include  -g   -std=c++17 -o CMakeFiles/dbus-service-app.dir/src/dbus_interface.cpp.o -c /home/jens/Desktop/dbus_example/cpp_server/src/dbus_interface.cpp",
+  "file": "/home/jens/Desktop/dbus_example/cpp_server/src/dbus_interface.cpp"
+},
+
+{
+  "directory": "/home/jens/Desktop/dbus_example/build",
+  "command": "/usr/bin/c++  -DBOOST_PROGRAM_OPTIONS_DYN_LINK -DBOOST_PROGRAM_OPTIONS_NO_LIB -I/home/jens/Desktop/dbus_example/cpp_server/include  -g   -std=c++17 -o CMakeFiles/dbus-service-app.dir/src/command_line_parser.cpp.o -c /home/jens/Desktop/dbus_example/cpp_server/src/command_line_parser.cpp",
+  "file": "/home/jens/Desktop/dbus_example/cpp_server/src/command_line_parser.cpp"
+}
+]

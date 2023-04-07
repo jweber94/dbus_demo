@@ -11,3 +11,6 @@ This project is an example for handing over file descriptors via dbus, makeing t
 ## Sending file descriptors via dbus
 + See https://dbus.freedesktop.org/doc/dbus-specification.html section "***Basic Types***" for details
     - You can use the `h` datatype to (de-)serialize file descriptors in dbus
++ Test via terminal:
+    - `$ dbus-send --system --print-reply --dest="org.jens.fdexchange" /org/jens/fdexchange org.jens.fdexchange.method.test`
+        * You'll get the inode entry back
