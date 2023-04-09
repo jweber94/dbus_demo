@@ -41,3 +41,6 @@ This project is an example for handing over file descriptors via dbus, makeing t
     - Then, you do not need to emit a custom signal on your own!
     - But you ***need to enable*** this within the `./config/dbus.example.service.conf`!
 + Property read and write can be linked with callbacks and these callbacks do NOT call each other (in contrast to OPC UA open62541)
+
+## Install the project
++ Run the `$ ./install.sh` script within the root of the `cpp_server` folder

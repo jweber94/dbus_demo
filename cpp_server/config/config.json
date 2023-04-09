@@ -1,4 +1,4 @@
 {
     "name": "org.jens.fdexchange",
-    "file": "data.dat"
+    "file": "/etc/dbus-service-app/data.dat"
 }

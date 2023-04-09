@@ -1,0 +1,10 @@
+[Unit]
+Description=DBus example service to show off what we can do with dbus
+
+[Service]
+Type=simple
+User=jens
+ExecStart=/sbin/dbus-service-app --config /etc/dbus-service-app/config.json
+
+[Install]
+WantedBy=multi-user.target
