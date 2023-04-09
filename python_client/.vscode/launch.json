@@ -1,0 +1,13 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Dbus-Next client",
+            "type": "python",
+            "request": "launch",
+            "python": "/home/jens/Desktop/dbus_venv/dbus_env/bin/python3",
+            "program": "${workspaceFolder}/client.py",
+            "args": [],
+        },
+    ]
+}
