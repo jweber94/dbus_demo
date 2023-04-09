@@ -5,7 +5,7 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 set(CMAKE_CXX_EXTENSIONS OFF)
 
-set(SOURCES src/data_exchange_class.cpp src/DbusMethodInstance.cpp src/command_line_parser.cpp)
+set(SOURCES src/DbusMethodInstance.cpp src/command_line_parser.cpp)
 
 add_executable(${CMAKE_PROJECT_NAME} src/main.cpp ${SOURCES})
 
