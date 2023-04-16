@@ -37,11 +37,13 @@ void DbusMethodInstance::getFileDescriptor(sdbus::MethodCall call) {
     if (m_fdSdbus.isValid()) {
         auto reply = call.createReply();
         reply << m_fdSdbus;
+        std::cout << "Sending File Descriptor" << std::endl;
         reply.send();
     } else {
         std::cerr << "No valid filedescriptor. Could not send something valid to the client." << std::endl;
         sdbus::Error err("org.jens.fdexchange.method.Error", "Invalid filedescriptor detected");
         auto reply = call.createErrorReply(err);
+        std::cout << "Sending Error" << std::endl;
         reply.send();
     }
     emitSignal();

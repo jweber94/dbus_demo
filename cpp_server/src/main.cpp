@@ -2,7 +2,6 @@
 #include <string>
 #include <memory>
 
-#include "data_exchange_class.hpp"
 #include "DbusMethodInstance.hpp"
 #include "command_line_parser.hpp"
 

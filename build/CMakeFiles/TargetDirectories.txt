@@ -1,3 +1,0 @@
-/home/jens/Desktop/dbus_example/build/CMakeFiles/rebuild_cache.dir
-/home/jens/Desktop/dbus_example/build/CMakeFiles/edit_cache.dir
-/home/jens/Desktop/dbus_example/build/CMakeFiles/dbus-service-app.dir
